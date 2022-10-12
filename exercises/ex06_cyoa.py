@@ -30,16 +30,18 @@ def main() -> None:
 
 
 def greet() -> None:
+    """Greets the player."""
     global player
     print("Hello, welcome to 'Which Disney Princess Are You?' quiz. Your job is to answer a few questions, and by the end of this quiz you will see which disney princess you are! Before we start...")
     player = input("What is your name? ")
 
 
 def player_points(play_pts: int) -> int: 
-    
 
 
-def question_a() -> None: 
+
+def question_a() -> None:
+    """First question of quiz.""" 
     global points
     print("How do you see yourself?: ")
     input_ques_a = input("kind, courageous, bold: ")
@@ -52,6 +54,7 @@ def question_a() -> None:
 
 
 def question_b() -> None: 
+    """Second question of quiz."""
     global points 
     print("How do others see you?: ")
     input_ques_b = input("playful, shy, naive: ")
@@ -63,7 +66,8 @@ def question_b() -> None:
         points += 10 
 
 
-def question_c() -> None: 
+def question_c() -> None:
+    """Third question of quiz.""" 
     global points 
     print("How would you describe yourself when it comes to getting what you want?: ")
     input_ques_c = input("ambitious, outspoken, strong-willed: ")
@@ -75,7 +79,8 @@ def question_c() -> None:
         points += 15
 
 
-def question_d() -> None: 
+def question_d() -> None:
+    """Fourth question of quiz.""" 
     global points
     print("What do you value?: ")
     input_ques_d = input("spirituality, independence, rebellion")
@@ -87,7 +92,8 @@ def question_d() -> None:
         points += 20
     
 
-def question_e() -> None: 
+def question_e() -> None:
+    """Fifth question of quiz.""" 
     global points
     print("What trait could you not live without?: ")
     input_ques_e = input("intelligence, curiousity, outspokenness")
@@ -99,6 +105,7 @@ def question_e() -> None:
         points = 20 
 
 def finale() -> str:
+    """Check point value against princess range."""
     global points
     if points < 21:
         if points <= 5:

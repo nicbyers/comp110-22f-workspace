@@ -36,7 +36,6 @@ while constant < 6:
         if chr_pos:
             box_variable = box_variable + YELLOW_BOX
            
-
         else: 
             box_variable = box_variable + WHITE_BOX
     constant = constant + 1

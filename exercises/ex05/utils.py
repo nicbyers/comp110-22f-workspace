@@ -1,6 +1,7 @@
 """Utility Functions."""
 __author__ = "730615558"
 
+
 def only_evens(input: list[int]) -> list[int]:
     """Checking for even numbers in a list."""
     list_int: list[int] = []
@@ -14,6 +15,7 @@ def only_evens(input: list[int]) -> list[int]:
 
 
 def concat(list_1: list[int], list_2: list[int]) -> list[int]:
+    """Combining two lists values into one."""
     list_cc: list[int] = []
     i: int = 0
     while i < len(list_1):
@@ -30,6 +32,7 @@ def concat(list_1: list[int], list_2: list[int]) -> list[int]:
 
 
 def sub(a_list: list[int], int_1: int, int_2: int) -> list[int]:
+    """Substituting values within given parameters with set start and end indexes."""
     result: list[int] = []
 
     if int_1 < 0:

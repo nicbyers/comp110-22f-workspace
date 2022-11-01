@@ -14,10 +14,11 @@ character: str = input("Enter a single character ")
 
 if len(character) != 1:
     print("Error: Character is not one character, try again!")
+    exit()
 
 instance_counter: int = 0
 
-print("Searching for " + character + " in " + word )
+print("Searching for " + character + " in " + word)
 
 if character == word[0]: 
     print(character + " found at index 0")
@@ -41,18 +42,9 @@ if character == word[4]:
     instance_counter = 1 + instance_counter
 
 if instance_counter == 0: 
-    print(" No instances of " + character + " found in " + word)
+    print("No instances of " + character + " found in " + word)
 else: 
-    print(str(instance_counter) + " instance of " + character + " found in " + word)
-
-
-
-
-
-
-
-
-
-
-    
-
+    if instance_counter == 1:
+        print(str(instance_counter) + " instance of " + character + " found in " + word)
+    else:
+        print(str(instance_counter) + " instances of " + character + " found in " + word)
